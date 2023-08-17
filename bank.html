@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Obscure Bank</title>
+</head>
+<body class="bg-black container mx-auto">
+    <header class="mb-20">
+        <h1 class="text-5xl text-white text-center mt-4 ">Welcome to 
+            <span class="text-green-400 font-bold">Obscure Bank</span></h1>
+    </header>
+    <main>
+        <section class="mb-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="text-white bg-green-400 rounded-lg p-12  ">
+                    <h1 class="text-3xl">Deposit</h1>
+                    <h2 class="font-semibold text-5xl">$00</h2>
+                </div>
+                <div class="text-white bg-[#4FC0D0] rounded-lg p-12  ">
+                    <h1 class="text-3xl">Withdraw</h1>
+                    <h2 class="font-semibold text-5xl">$00</h2>
+                </div>
+                <div class="text-white bg-[#1B6B93] rounded-lg p-12 ">
+                    <h1 class="text-3xl" >Balance</h1>
+                    <h2 class="font-semibold text-5xl">$00</h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit & withdraw -->
+        <section>
+            <div class="grid grid-cols-2 gap-10">
+                <div class="text-white bg-[#0B666A] rounded-lg p-12 flex flex-col gap-5">
+                    <h1 class="text-3xl">Deposit Here</h1>
+                    <input type="text" name="" id="" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold" placeholder="enter amount">
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="submit-btn">Deposit</button>
+                </div>
+                <div class="text-white bg-[#35A29F] rounded-lg p-12 flex flex-col gap-5">
+                    <h1 class="text-3xl">Withdraw here</h1>
+                    <input type="text" name="" id="" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold " placeholder="enter amount">
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="submit-btn">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+</html>
