@@ -16,30 +16,32 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="text-white bg-green-400 rounded-lg p-12  ">
                     <h1 class="text-3xl">Deposit</h1>
-                    <h2 class="font-semibold text-5xl">$00</h2>
+                    <h1 class="font-semibold text-5xl">$<span id="deposit-total" class="font-semibold text-5xl">00</span></h1>
                 </div>
                 <div class="text-white bg-[#4FC0D0] rounded-lg p-12  ">
                     <h1 class="text-3xl">Withdraw</h1>
-                    <h2 class="font-semibold text-5xl">$00</h2>
+                    <h2 class="font-semibold text-5xl">$<span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="text-white bg-[#1B6B93] rounded-lg p-12 ">
                     <h1 class="text-3xl" >Balance</h1>
-                    <h2 class="font-semibold text-5xl">$00</h2>
+                    <h2 class="font-semibold text-5xl">$<span id="balance-total">00</span></h2>
                 </div>
             </div>
         </section>
         <!-- deposit & withdraw -->
         <section>
             <div class="grid grid-cols-2 gap-10">
+                <!-- Taking new deposit -->
                 <div class="text-white bg-[#0B666A] rounded-lg p-12 flex flex-col gap-5">
                     <h1 class="text-3xl">Deposit Here</h1>
-                    <input type="text" name="" id="" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold" placeholder="enter amount">
-                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="submit-btn">Deposit</button>
+                    <input type="text" name="" id="deposit-field" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold" placeholder="enter amount">
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="deposit-btn">Deposit</button>
                 </div>
+                <!-- Taking new withdraw -->
                 <div class="text-white bg-[#35A29F] rounded-lg p-12 flex flex-col gap-5">
                     <h1 class="text-3xl">Withdraw here</h1>
-                    <input type="text" name="" id="" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold " placeholder="enter amount">
-                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="submit-btn">Withdraw</button>
+                    <input type="text" name="" id="withdraw-field" class="bg-green-200 rounded-md w-1/2 h-10 p-4 focus:outline-none caret-green-600 placeholder-green-600 text-green-600 font-semibold " placeholder="enter amount">
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-md font-medium w-max" id="withdraw-btn">Withdraw</button>
                 </div>
             </div>
         </section>
@@ -47,6 +49,8 @@
     <footer>
 
     </footer>
-    <script src="js/login.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+
 </body>
 </html>
